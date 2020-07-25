@@ -1,0 +1,175 @@
+/* CSS Reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+ :root{
+     --navbar-height: 59px;
+ }
+ 
+ /* Navigation Bar  */
+#navbar{
+    position: absolute;
+    top: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    font-family: 'Playball', cursive;
+}
+
+/* Navigation bar logo and img  */
+#logo{
+margin: 10px 35px;
+
+}
+
+#logo img{
+margin: 3px 6px;
+height: 59px;
+}
+/* Navigation bar list styling  */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    font-size: 25px;
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    padding: 20px 200px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playball', cursive;    
+}
+
+#home::before{
+    content: "";
+    background: url("fresh\ veges.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.89;      
+}
+#home h1{
+    color: black;
+    text-align: center;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+/* Service Section  */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 50px 50px;
+    margin: 4px 34px;
+    border-radius: 28px;
+    background-color: rgb(182, 174, 174);
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 100px;
+}
+#services .box h2{
+    font-family: 'Playball', cursive; 
+    font-size: 2.5rem;  
+}
+#services .box p{
+    font-family: 'Playball', cursive; 
+    font-size: 1.2rem;  
+}
+
+/* Clients section  */
+#client-section{
+height: 344px;
+}
+
+#clients{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.client-item{
+    padding: 34px;
+
+}
+#clients img{
+    height: 124px;
+}
+
+
+/* Utility class  */
+.h-primary{
+    font-family: 'Playball', cursive;
+    font-size: 2.8rem;
+    padding: 12px
+}
+.h-secondary center{
+    font-family: 'Playball', cursive;
+    font-size: 3.8rem;
+    padding: 12px
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(31, 129, 55);
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Permanent Marker', cursive;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
